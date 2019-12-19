@@ -1,0 +1,58 @@
+{
+    "name": "Density",
+    "description": "Density is an integrated, elegant, and anonymous people counter. Measure occupancy across a network of spaces in real-time, from corporate offices to college campuses. Make people count.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/22426-density-io.jpg",
+    "tags": [
+        "api provider",
+        "have api",
+        "internet of things",
+        "sensors"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/density\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Density",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/22426-density-io.jpg",
+            "humanURL": "https:\/\/www.density.io",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/density-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/density-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/density"
+        },
+        {
+            "type": "Curated Source",
+            "url": "https:\/\/www.density.io\/"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/density.io"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/densityio"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/www.density.io"
+        }
+    ]
+}
