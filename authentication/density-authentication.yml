@@ -1,0 +1,38 @@
+generated: '2026-07-18'
+method: searched
+source: https://developers.density.io/quick_start/
+docs: https://developers.density.io/quick_start/
+summary:
+  types: [http, oauth2]
+  api_key_in: [header]
+  oauth2_flows: [clientCredentials]
+  identity_provider: Auth0
+schemes:
+- name: bearerToken
+  type: http
+  scheme: bearer
+  description: >-
+    Static, long-lived API token created by an account Owner in Atlas Developer
+    Settings. Tokens are prefixed with "tok_" and passed in the Authorization
+    header as "Bearer <token>". A request without a valid Authorization header
+    returns 403.
+  header: Authorization
+  format: 'Bearer <token>'
+  token_prefix: tok_
+  sources: [docs]
+- name: oauth2ClientCredentials
+  type: oauth2
+  description: >-
+    Machine-to-machine OAuth 2.0 client-credentials flow (Auth0-backed). Create a
+    Client ID / Client Secret in Atlas Developer Settings and exchange them at the
+    token endpoint for a short-lived access token (JWT, prefixed "eyJ") passed as a
+    Bearer token on subsequent requests.
+  flows:
+  - flow: clientCredentials
+    tokenUrl: https://api.density.io/v3/oauth/token
+    grant_type: client_credentials
+    token_prefix: eyJ
+  sources: [docs]
+notes:
+- An Owner role in the Density account is required to create API credentials (contact support@density.io).
+- Credentials are managed at https://atlas.density.io/ under Developer settings.
