@@ -1,0 +1,36 @@
+# Density
+
+> Density builds radar-based occupancy sensors and a workplace analytics platform that measures how people use physical space without cameras or PII. The v3 Public API exposes real-time occupancy and presence, historical space metrics, spaces/doorways/sensors/labels resources, sensor and space health, WebSocket live streams, and wayfinding display tokens.
+
+Authentication: OAuth 2.0 client-credentials (Auth0-backed, token endpoint https://api.density.io/v3/oauth/token) or a static Bearer API token. Base URL: https://api.density.io/v3. Rate limit: 15 req/s per IP, burst 100, at the edge.
+
+## APIs
+- [Density Public API v3](https://developers.density.io/docs): Real-time occupancy/presence, historical metrics, spaces/sensors management, WebSocket streams.
+
+## Docs
+- [Developer Portal](https://developers.density.io/): Home for Density API documentation.
+- [API Reference](https://developers.density.io/docs): Full v3 endpoint reference (Redocly).
+- [Quick Start](https://developers.density.io/quick_start/): Create credentials and make your first request.
+- [Key Concepts](https://developers.density.io/key_concepts/): Spaces, time, and health model.
+- [Understand Health](https://developers.density.io/understand_health/): Sensor Health and Space Health.
+- [WebSockets](https://developers.density.io/websockets/): Live floor-presence and space-occupancy streams.
+- [FAQs](https://developers.density.io/faqs/): Frequently asked questions.
+
+## Operations
+- [Status Page](https://status.density.io): Live component status (Atlassian Statuspage).
+- [Sign Up / Atlas](https://atlas.density.io/): Manage the org and create API credentials.
+- [Pricing](https://www.density.io/pricing): Product and pricing information.
+- [Support](https://support.density.io/hc/en-us): Help center.
+
+## Legal
+- [Terms of Service](https://www.density.io/legal/terms-of-service)
+- [Privacy Policy](https://www.density.io/legal/privacy-policy)
+
+## Artifacts
+- [Authentication](authentication/density-authentication.yml)
+- [Conventions](conventions/density-conventions.yml)
+- [Lifecycle](lifecycle/density-lifecycle.yml)
+- [Error Catalog](errors/density-problem-types.yml)
+- [WebSocket Events](asyncapi/density-websockets-events.yml)
+- [Data Model](data-model/density-data-model.yml)
+- [Packages](packages/density-packages.yml)

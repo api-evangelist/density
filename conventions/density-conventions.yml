@@ -1,0 +1,41 @@
+generated: '2026-07-18'
+method: searched
+source: https://developers.density.io/docs/
+docs: https://developers.density.io/docs/
+authentication:
+  style: bearer-token
+  header: Authorization
+  format: 'Bearer <token>'
+  flows: [static-api-token, oauth2-client-credentials]
+  ref: authentication/density-authentication.yml
+base_url: https://api.density.io/v3
+versioning:
+  scheme: uri-path
+  current: v3
+  note: v1 and v2 are deprecated and not recommended for new applications; newer sensors (Waffle) are v3-only.
+  ref: lifecycle/density-lifecycle.yml
+pagination:
+  supported: false
+  note: >-
+    v3 analytics and resource endpoints do not expose pagination parameters. Use
+    endpoint-specific filters and date windows to keep responses manageable.
+idempotency:
+  supported: unknown
+  note: No idempotency-key contract is documented on the public developer portal.
+rate_limiting:
+  documented: true
+  limit: 15 requests per second per IP
+  burst: 100 requests
+  scope: per-IP, enforced at the edge
+  note: Public API traffic is rate-limited at the edge.
+error_envelope:
+  format: json
+  fields: [code, message]
+  note: Structured JSON error responses with HTTP status codes (200/400/401/403/404/500).
+  ref: errors/density-problem-types.yml
+realtime:
+  websockets: true
+  streams: [floor-presence, space-occupancy]
+  ref: asyncapi/density-websockets-events.yml
+data_access:
+  live_latency: ~1 second for Presence, Short-Term Analytics, and Current Occupancy endpoints

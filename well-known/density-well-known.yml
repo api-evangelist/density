@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+source: probed /.well-known/ on api/www/developers hosts
+note: >-
+  No /.well-known/ discovery documents were served on any Density host. Absence is
+  valid recorded data. OAuth is Auth0-backed but no authorization-server metadata is
+  exposed on api.density.io.
+hosts:
+- host: https://api.density.io
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+- host: https://www.density.io
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+- host: https://developers.density.io
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}

@@ -1,0 +1,30 @@
+generated: '2026-07-18'
+method: searched
+source: https://developers.density.io/docs/
+format: custom-json
+envelope:
+  fields: [code, message]
+  content_type: application/json
+  note: >-
+    Density returns standard HTTP status codes with a structured JSON body carrying
+    a machine-readable "code" and a human-readable "message". Not RFC 9457
+    problem+json.
+problems:
+- status: 400
+  title: Bad Request
+  meaning: Malformed request or invalid parameters.
+- status: 401
+  title: Unauthorized
+  meaning: Missing or invalid access token.
+- status: 403
+  title: Forbidden
+  meaning: >-
+    Request made without a proper Authorization header, or the token lacks
+    permission for the resource. The docs note any call without a valid
+    Authorization header returns 403.
+- status: 404
+  title: Not Found
+  meaning: The requested resource or space/sensor id does not exist.
+- status: 500
+  title: Internal Server Error
+  meaning: Unexpected server-side error.

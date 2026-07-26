@@ -1,9 +1,26 @@
 aid: density
 name: Density
-description: 'Density is a company surfaced as a portfolio company of kleiner-perkins and added to the
-  API Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Density builds radar-based occupancy sensors and a workplace analytics platform that measures
+  how people use physical space without cameras or personally identifiable information. Its v3 Public API
+  (api.density.io) exposes real-time occupancy and presence, historical metrics (occupancy, utilization,
+  time used, sessions, raw sessions), spaces / doorways / sensors / labels resources, sensor and space
+  health, wayfinding display tokens, and WebSocket streams for live floor presence and space occupancy.
+  Authentication is OAuth 2.0 client-credentials (Auth0-backed) or static Bearer API tokens. Originally
+  surfaced as a portfolio company of kleiner-perkins and enriched from Density''s public developer surface.'
 url: https://raw.githubusercontent.com/api-evangelist/density/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/5f49c40736fbe713860f9203/681a28ab6cdef3f72543b7bd_density-favicon_256x256.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,16 +29,107 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Enterprise
-apis: []
+- Occupancy Sensors
+- Workplace Analytics
+- Real Time
+- Occupancy
+- Sensors
+- IoT
+- Space Utilization
+- Proptech
+apis:
+- name: Density Public API v3
+  description: 'Density v3 Public API for real-time occupancy and presence, historical space metrics
+    (occupancy, utilization, time used, sessions), spaces / doorways / sensors / labels management,
+    sensor and space health, WebSocket live streams, and wayfinding display tokens. OAuth 2.0
+    client-credentials or Bearer token authentication.'
+  humanURL: https://developers.density.io/docs
+  baseURL: https://api.density.io/v3
+  tags:
+  - Occupancy
+  - Presence
+  - Sensors
+  - Spaces
+  - Analytics
+  properties:
+  - type: Documentation
+    url: https://developers.density.io/docs
+  - type: APIReference
+    url: https://developers.density.io/docs
+  - type: Authentication
+    url: authentication/density-authentication.yml
+  - type: Webhooks
+    url: asyncapi/density-websockets-events.yml
+  - type: ErrorCatalog
+    url: errors/density-problem-types.yml
+  - type: Conventions
+    url: conventions/density-conventions.yml
+  - type: DataModel
+    url: data-model/density-data-model.yml
+common:
+- type: DomainSecurity
+  url: security/density-domain-security.yml
+- type: Website
+  url: https://www.density.io
+- type: DeveloperPortal
+  url: https://developers.density.io/
+- type: Documentation
+  url: https://developers.density.io/docs
+- type: APIReference
+  url: https://developers.density.io/docs
+- type: GettingStarted
+  url: https://developers.density.io/quick_start/
+- type: Support
+  url: https://support.density.io/hc/en-us
+- type: SignUp
+  url: https://atlas.density.io/
+- type: Pricing
+  url: https://www.density.io/pricing
+- type: TermsOfService
+  url: https://www.density.io/legal/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.density.io/legal/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/DensityCo
+- type: StatusPage
+  url: https://status.density.io
+- type: Deprecation
+  url: lifecycle/density-lifecycle.yml
+- type: Authentication
+  url: authentication/density-authentication.yml
+- type: Conventions
+  url: conventions/density-conventions.yml
+- type: Lifecycle
+  url: lifecycle/density-lifecycle.yml
+- type: ErrorCatalog
+  url: errors/density-problem-types.yml
+- type: Conformance
+  url: conformance/density-conformance.yml
+- type: Packages
+  url: packages/density-packages.yml
+- type: Components
+  url: components/density-components.yml
+- type: Webhooks
+  url: asyncapi/density-websockets-events.yml
+- type: DataModel
+  url: data-model/density-data-model.yml
+- type: WellKnown
+  url: well-known/density-well-known.yml
+- type: MCPServer
+  url: mcp/density-mcp.yml
+- type: LLMsTxt
+  url: llms/density-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-common:
-- type: Website
-  url: https://www.density.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,32 @@
+generated: '2026-07-18'
+method: searched
+source: https://developers.density.io/websockets/
+type: Webhooks
+surface: websocket
+note: >-
+  Density exposes a real-time event surface over WebSockets (not an AsyncAPI
+  document). Two live streams are documented; each requires a Floor ID and streams
+  update messages. The status page also lists a "Webhooks" component, but no public
+  webhook catalog is documented on the developer portal.
+streams:
+- name: floor-presence
+  operation: floor_presence_ws_broker_v3
+  applies_to: Open Area (OA) sensors
+  requires: floor_id
+  message_fields:
+  - update_type   # live | refresh
+  - timestamp
+  - presence      # boolean
+  - counting_mode # oa
+  - space_health_status
+- name: space-occupancy
+  operation: space_occupancy_ws_broker_v3
+  applies_to: Entry sensors
+  requires: floor_id
+  message_fields:
+  - update_type   # live | refresh
+  - timestamp
+  - occupancy     # numeric count
+  - counting_mode # entry
+  - space_health_status
+docs: https://developers.density.io/websockets/

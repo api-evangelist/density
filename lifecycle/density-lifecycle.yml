@@ -1,0 +1,37 @@
+generated: '2026-07-18'
+method: searched
+source: https://developers.density.io/docs/
+versioning:
+  scheme: uri-path
+  current: v3
+  docs: https://developers.density.io/docs/
+deprecation:
+  policy_documented: true
+  deprecated_versions:
+  - version: v2
+    docs: https://docs.density.io/v2/
+    note: Deprecated; not recommended for new applications.
+  - version: v1
+    docs: https://docs.density.io/v1/
+    note: Deprecated; not recommended for new applications.
+  note: >-
+    Newer sensors such as Waffle are only supported on the v3 API. v1 and v2 remain
+    documented but are marked deprecated.
+status_page: https://status.density.io
+status_page_provider: Atlassian Statuspage
+status_components:
+- API
+- Live
+- Websocket Server
+- Webhooks
+- Auth0
+- Atlas
+- Displays
+- Spaces App
+- Infrastructure
+- AWS EC2
+- AWS RDS
+- TimescaleDB Cloud
+sla:
+  url: null
+  uptime_target: null

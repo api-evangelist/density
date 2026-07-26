@@ -1,0 +1,50 @@
+generated: '2026-07-18'
+method: searched
+source: https://developers.density.io/docs/
+note: >-
+  Entity graph derived from the documented v3 resource surface (Spaces, Doorways,
+  Sensors, Labels, Users). Density does not publish a downloadable OpenAPI file to
+  the public web, so relationships reflect the documented object model rather than
+  spec $ref links.
+entities:
+- name: Space
+  description: A physical area (building, floor, room, or open area) that is measured.
+  key_fields: [id, name, space_type]
+- name: Doorway
+  description: An entry/exit point associated with a space, monitored by Entry sensors.
+  key_fields: [id, name]
+- name: Sensor
+  description: A Density device (Open Area / Entry / Waffle) that produces counts and presence.
+  key_fields: [id, sensor_type, health]
+- name: Label
+  description: A tag applied to spaces; labels are organized into label groups.
+  key_fields: [id, name]
+- name: LabelGroup
+  description: A collection of labels.
+  key_fields: [id, name]
+- name: User
+  description: An account user (managed via M2M endpoints).
+  key_fields: [id, email, role]
+relationships:
+- from: Space
+  to: Doorway
+  type: has_many
+  via: space_id
+- from: Space
+  to: Sensor
+  type: has_many
+  via: space_id
+- from: Space
+  to: Space
+  type: has_many
+  via: parent_space_id
+  note: Spaces are hierarchical (a floor has child spaces).
+- from: LabelGroup
+  to: Label
+  type: has_many
+  via: label_group_id
+- from: Space
+  to: Label
+  type: has_many
+  via: labels
+  note: Many-to-many; spaces are filtered by labels.

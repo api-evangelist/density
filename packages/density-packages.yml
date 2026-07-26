@@ -1,0 +1,28 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.npmjs.com/package/@density/charts
+note: >-
+  Density does not publish a maintained first-party REST API client SDK. The only
+  live, official package under the @density npm scope is a charting/dashboard UI
+  library used to visualize Density API data. A legacy Python SignalR client
+  (DensityCo/signalr-client-py) exists but is archived (2020) and is not listed as
+  an SDK.
+packages:
+- language: javascript
+  registry: npm
+  name: "@density/charts"
+  url: https://www.npmjs.com/package/@density/charts
+  install: npm install @density/charts
+  version: 1.2.2
+  license: MIT
+  official: true
+  kind: ui-components
+  description: Charts used across Density dashboards to visualize data fetched from the Density API.
+  source: https://github.com/DensityCo/charts
+archived:
+- language: python
+  name: signalr-client-py
+  url: https://github.com/DensityCo/signalr-client-py
+  official: true
+  archived: true
+  note: Legacy SignalR proxy client, archived 2020; not a maintained REST SDK.

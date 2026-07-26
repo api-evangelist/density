@@ -1,0 +1,28 @@
+generated: '2026-07-18'
+method: derived
+source: https://developers.density.io/docs/
+standards:
+- id: oauth2
+  conforms: true
+  evidence: OAuth 2.0 client-credentials flow with token endpoint https://api.density.io/v3/oauth/token (Auth0-backed).
+- id: oidc
+  conforms: false
+  evidence: No /.well-known/openid-configuration published (404); OAuth used for M2M client credentials only.
+- id: bearer-token-rfc6750
+  conforms: true
+  evidence: Access tokens presented in the Authorization header as "Bearer <token>".
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: Errors use a custom {code, message} JSON envelope, not application/problem+json.
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: No /.well-known/security.txt found on api/www/developers hosts (404).
+- id: websocket-streaming
+  conforms: true
+  evidence: Documented WebSocket brokers for floor presence and space occupancy streams.
+- id: pagination
+  conforms: false
+  evidence: v3 endpoints expose no pagination parameters; filters and date windows used instead.
+- id: idempotency
+  conforms: false
+  evidence: No documented idempotency-key contract.

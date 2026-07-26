@@ -1,0 +1,17 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/DensityCo/charts
+note: >-
+  Client-side UI component/visualization library published by Density for rendering
+  occupancy and utilization data fetched from the Density API. Distinct from a
+  server-side SDK.
+families:
+- name: Density Charts
+  kind: charting / dashboard components
+  package: "@density/charts"
+  registry: npm
+  url: https://www.npmjs.com/package/@density/charts
+  repo: https://github.com/DensityCo/charts
+  license: MIT
+  official: true
+  description: A set of reusable charts used across Density dashboards to visualize Density API data.
