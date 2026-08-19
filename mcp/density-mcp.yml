@@ -2,11 +2,9 @@ generated: '2026-07-18'
 method: derived
 status: candidate
 source: https://developers.density.io/docs/
-note: >-
-  No official hosted/remote MCP server was found for Density. This is a CANDIDATE
-  tool list derived from documented v3 API operations (Density does not publish a
-  downloadable OpenAPI file, so tools reflect documented endpoints, not verified
-  operationIds).
+note: No official hosted/remote MCP server was found for Density. This is a CANDIDATE tool list derived
+  from documented v3 API operations (Density does not publish a downloadable OpenAPI file, so tools reflect
+  documented endpoints, not verified operationIds).
 server:
   name: density
   transport: http
@@ -32,3 +30,9 @@ tools:
   description: Query occupancy / utilization / time-used / sessions metrics for a space.
 - name: list_labels
   description: List labels and label groups.
+deployment:
+  mode: none
+  verified: derived
+  tools: 10
+  checked: '2026-08-12'
+  source: catalog MCP census
