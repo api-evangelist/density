@@ -40,7 +40,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-10-06'
 x-docs-platform: redocly
 x-docs-platform-confidence: high
 x-docs-platform-checked: 2026-09-25
@@ -104,6 +104,8 @@ apis:
   - type: DataModel
     url: data-model/density-data-model.yml
 common:
+- url: https://density.io/about-density/press
+  type: Blog
 - type: DomainSecurity
   url: security/density-domain-security.yml
 - type: Website
