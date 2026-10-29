@@ -64,6 +64,109 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Density is a company surfaced as a portfolio company of kleiner-perkins and added to the API Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting the enrichment pipeline.
+Density builds radar-based occupancy sensors and a workplace analytics platform that measures how people use physical space without cameras or personally identifiable information. Its v3 Public API (api.density.io) exposes real-time occupancy and presence, historical metrics (occupancy, utilization, time used, sessions, raw sessions), spaces / doorways / sensors / labels resources, sensor and space health, wayfinding display tokens, and WebSocket streams for live floor presence and space occupancy. Authentication is OAuth 2.0 client-credentials (Auth0-backed) or static Bearer API tokens. Originally surfaced as a portfolio company of kleiner-perkins and enriched from Density's public developer surface.
 
-Backed by: kleiner-perkins — https://www.density.io
+**Areas:** Company · Enterprise · Occupancy Sensors · Workplace Analytics · Real-Time · Occupancy · Sensors · IoT · Space Utilization · PropTech
+
+## Density on APIs.io
+
+Everything profiled for Density is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/density/](https://apis.io/providers/density/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Density Public API v3](https://apis.io/apis/density/density-public-api-v3/) — Density v3 Public API for real-time occupancy and presence, historical space metrics (occupancy, utilization, time used, sessions), spaces / doorways /…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Density Websockets Events](https://apis.io/asyncapis/density/density-websockets-events/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [density](https://apis.io/servers/density/density/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Density Authentication](https://apis.io/security/density/density-authentication/)
+- [Density Domain Security](https://apis.io/security/density/density-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.density.io)
+- [Documentation](https://developers.density.io/docs)
+- [Getting started](https://developers.density.io/quick_start/)
+- [API reference](https://developers.density.io/docs)
+- [Pricing](https://www.density.io/pricing)
+- [Sign up](https://atlas.density.io/)
+- [Support](https://support.density.io/hc/en-us)
+- [Blog](https://density.io/about-density/press)
+- [Terms of service](https://www.density.io/legal/terms-of-service)
+- [Privacy policy](https://www.density.io/legal/privacy-policy)
+- [GitHub](https://github.com/DensityCo)
+- [Status](https://status.density.io)
+
+## API Evangelist rating
+
+**Kin Score 41.2** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 39.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 34.2 |
+| Developer ergonomics | 57.1 |
+| Access clarity | 31.6 |
+
+**Agent readiness 22.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 24.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/density/](https://apis.io/providers/density/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Density: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/density/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
